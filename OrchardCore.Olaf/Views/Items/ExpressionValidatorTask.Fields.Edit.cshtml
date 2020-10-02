@@ -1,0 +1,25 @@
+﻿@using OrchardCore.Olaf.ExpressionValidator.Services;
+@model OrchardCore.Olaf.ExpressionValidator.ExpressionValidatorTaskViewModel
+
+
+<div class="form-group" asp-validation-class-for="PropertyValue">
+    <label asp-for="PropertyValue">@T["Variable"]</label>
+    <input type="text" asp-for="PropertyValue" class="form-control" />
+    <span asp-validation-for="PropertyValue"></span>
+    <span class="hint">@T["The variable to be validated. Accepts liquid input."]</span>
+</div>
+
+<div class="form-group" asp-validation-class-for="PropertyType">
+    <label asp-for="PropertyType">@T["Variable type"]</label>
+    <select asp-items="FieldTypes.BuildInTypes" class="form-control" asp-for="PropertyType"></select>
+    <span asp-validation-for="PropertyType"></span>
+    <span class="hint">@T["The type of the variable, to validate."]</span>
+</div>
+
+<div class="form-group" asp-validation-class-for="Expression" id="expression-field">
+    <label asp-for="Expression">@T["Expression"]</label>
+    <input type="text" asp-for="Expression" class="form-control" />
+    <span asp-validation-for="Expression"></span>
+    <span class="hint">@T["The validation expression. Write your expression based on the selected expression type. Accepts liquid input"]</span>
+</div>
+

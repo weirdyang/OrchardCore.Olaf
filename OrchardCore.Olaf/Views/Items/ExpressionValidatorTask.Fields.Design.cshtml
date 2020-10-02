@@ -1,0 +1,6 @@
+﻿@model ActivityViewModel<OrchardCore.Olaf.ExpressionValidator.ExpressionValidatorTask>
+
+<header>
+    <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Variable"])</h4>
+</header>
+<span>@T["Validate <em>{0}</em>", Model.Activity.PropertyValue]</span>

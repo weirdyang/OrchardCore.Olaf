@@ -1,0 +1,10 @@
+﻿@using OrchardCore.Workflows.Timers;
+@model OrchardCore.Olaf.Delay.DelayEventViewModel
+
+<fieldset class="form-group" asp-validation-class-for="DateTimeExpression">
+    <label asp-for="DateTimeExpression">@T["Target time"]</label>
+    <input type="text" asp-for="DateTimeExpression" class="form-control" autofocus />
+    <span asp-validation-for="DateTimeExpression"></span>
+    <span class="hint">@T["The target time to fire the event, accepts liquid input. For best accuracy, use this format: {0}."
+                      , OrchardCore.Olaf.Common.DateTimeUtils.DateTimeFormat]</span>
+</fieldset>
