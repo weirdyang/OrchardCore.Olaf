@@ -11,5 +11,6 @@ this allows the user to schedule a task by passing in a DateTime. this task acce
 
 # expression validator
 credit to https://github.com/Stoyanov8/OrchardCore.ExpressionFormFieldValidation
-Inspiration is from this [repo](https://github.com/Stoyanov8/OrchardCore.ExpressionFormFieldValidation). 
+
+Inspiration is from this [repo](https://github.com/Stoyanov8/OrchardCore.ExpressionFormFieldValidation).  
 the task has been extended to accept liquid input and to validate user input instead of form fields.
